@@ -7,7 +7,8 @@ import DataContainer from "./DataContainer";
 import TableHeader from "./TableHeader";
 
 const DataDisplay = () => {
-  const userData = useSelector((data) => data.users);
+  const userData = useSelector((data) => data.userData.users);
+  console.log(userData);
   const dispatch = useDispatch();
   return (
     <section className="text-gray-600 body-font">
